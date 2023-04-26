@@ -1,0 +1,55 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+header{
+    background-color: $black;
+    height: 157px;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    @include flexHeader();
+}
+
+.sectionLogin{
+    @include flexCenter();
+
+    &__h2 {
+        font-size: 30px;
+    }
+
+    &__h3 {
+        font-size: 22px;
+    }
+
+    .divInput {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+
+        label {
+            
+            margin-bottom: 12px;
+            margin-top: 20px;
+        }
+
+        input {
+
+            height: 52px;
+            width: 524px;
+            border-radius: 10px;
+            padding: 11px 13px 11px 13px;
+        }
+
+    }
+
+    button{
+
+        width: 524px;
+        height: 48px;
+        border-radius: 6px;
+        background-color: $blue;
+        color: $white;
+    }
+}

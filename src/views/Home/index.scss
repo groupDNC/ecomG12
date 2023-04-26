@@ -1,0 +1,9 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+header{
+    background-color: $black;
+    height: 157px;
+    width: 1440px;
+    @include flexCenter();
+}
