@@ -13,9 +13,9 @@ const Home = () => {
             <h3 className='sectionLogin__h3'>você pode entrar com o seu CPF</h3>
             <form className='divInput'>
                 <label className='divInput__label'>Digite seu CPF:</label>
-                <input className='divInput__input' type="text" />
+                <input className='divInput__input' type="text" placeholder='Digite seu CPF' />
                 <label className='divInput__label'>Senha:</label>
-                <input className='divInput__input' type="text" />
+                <input className='divInput__input' type="text" placeholder='***************'/>
                 <button type='submit' className='divInput__button'>
                 <Link to={"/Home"}>Entrar</Link>
                 </button>

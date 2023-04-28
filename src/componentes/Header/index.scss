@@ -41,15 +41,15 @@
         color: $white;
         font-weight: 600;
         padding-top: 40px;
+        transition: transform 1s ease-out;
         
-
     }
 
     &__nav h3:hover{
 
         font-size: 20px;
         cursor: pointer;
-        transition: 0.5s;
+        transition:0.8s ;
     }
     
 }

@@ -4,6 +4,7 @@ import './index.scss'
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Login from './views/Login/Login';
 import Home from './views/Home/Home';
+import Products from './views/Products/Products';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/Home",
     element: <Home />,
+  },
+  {
+    path: "/Products",
+    element: <Products />,
   },
 ]);
 
