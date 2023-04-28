@@ -1,0 +1,17 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+.footer {
+    @include flexHeader;
+    width: 100%;
+    justify-content: space-around;
+    background-color: $blue;
+    padding: 1rem;
+
+    &__text{
+        color: $white;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+}

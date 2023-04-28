@@ -1,0 +1,55 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+.headerHome {
+
+    @include flexHeader();
+    flex-direction: column;
+    background-color: $black;
+    height: 180px;
+
+    &__div {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+
+        &__input{
+
+            height: 48px;
+            width: 970px;
+            border-radius: 10px;
+            border: 1px solid #B7B7B7;
+            background-color: $white;
+            padding: 0 3rem;
+            background-image: url('/search.svg');
+            background-repeat: no-repeat;
+            background-position: 15px;
+            
+        }
+    }
+
+    &__nav{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: end;
+        width: 90%;
+        color: $white;
+        font-weight: 600;
+        padding-top: 40px;
+        
+
+    }
+
+    &__nav h3:hover{
+
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+}
