@@ -1,0 +1,30 @@
+.home__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: #FFFFFF;
+
+
+  &-productsCard{
+  width: 330px;
+  height: 255px;
+  display: flex;
+  flex-direction: row;
+  }
+
+  &-description{
+    color: #252423;
+    margin-top: 2rem;
+  }
+
+  &-button{
+    width: 128px;
+    height: 24px;
+    background-color: #0c70f2;
+    color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 2rem;
+  }
+}

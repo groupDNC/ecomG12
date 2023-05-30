@@ -5,7 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { PRODUCTS_MOCK } from "../src/mock/products.mock";
 import Login from "./views/Login/Login";
 import Home from "./views/Home/Home";
-import Products from "./views/Products/Products";
+import Products from "./componentes/Products/Products";
+import ProductsPage from "./views/ProductsPage/ProductsPage";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/Products",
     element: <Products data={PRODUCTS_MOCK} />,
+  },
+  {
+    path: "/productsPage/:productId",
+    element: <ProductsPage data={PRODUCTS_MOCK} />,
   },
 ]);
 

@@ -1,11 +1,20 @@
 @use "../../sass/variables" as *;
 @use "../../sass/mixins" as *;
 
+.body{
+  background-color: #2d2d2d;
+}
+
 .imgHome {
   width: 100%;
 }
 
-.cards {
-  height: 50vh;
+.home {
   background-color: $black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem;
+  gap:2rem;
+  
 }

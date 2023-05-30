@@ -4,7 +4,7 @@ import "./index.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <img src="DNC.svg" alt="" />
+      <img src="../DNC.svg" alt="" />
       <h3 className="footer__text">
         Preços e condições de pagamento exclusivos para compras via internet e
         podem variar nas lojas físicas. <br />
