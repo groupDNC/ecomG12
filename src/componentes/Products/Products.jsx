@@ -14,7 +14,7 @@ const Products = ({ data }) => {
         <p>{data.description}</p>
       </div>
       <button className="home__card-button">
-        <Link to={`/productsPage/${data.id}`}>Ver mais</Link>
+        <Link to={`/productsPage/${data.id}`}>Ver mais</Link> {/* Cria um link para a página de detalhes do produto com base no seu ID */}
       </button>
     </section>
   );

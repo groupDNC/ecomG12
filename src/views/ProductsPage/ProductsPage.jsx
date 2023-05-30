@@ -5,15 +5,15 @@ import ProductDetail from "../../componentes/ProductDetail/ProductDetail";
 import Footer from "../../componentes/Footer/Footer";
 
 const ProductsPage = ({ data }) => {
-  const { productId } = useParams();
-  const selectedProduct = data.find((product) => product.id == productId);
+  const { productId } = useParams(); // Obtém o parâmetro de rota productId
+  const selectedProduct = data.find((product) => product.id == productId); // Procura o produto correspondente ao productId na lista de dados
   return (
     <div>
       <section>
-        <Header />
-        <ProductDetail data={selectedProduct} />
+        <Header /> {/* Componente do cabeçalho */}
+        <ProductDetail data={selectedProduct} /> {/* Componente de detalhes do produto */}
       </section>
-      <Footer />
+      <Footer /> {/* Componente do rodapé */}
     </div>
   );
 };

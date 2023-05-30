@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
-  
+
   const [cpf, setCpf] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -12,13 +12,13 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (cpf.length !== 11) {
-      setError('CPF inválido');
+      setError("CPF inválido"); // Define uma mensagem de erro se o CPF não tiver 11 dígitos
       return;
     } else if (password.length < 8) {
-      setError('Senha deve ter no mínimo 8 caracteres');
-        return;
+      setError("Senha deve ter no mínimo 8 caracteres"); // Define uma mensagem de erro se a senha tiver menos de 8 caracteres
+      return;
     }
-    navigate("/Home");
+    navigate("/Home"); // Redireciona para a página "/Home" se as validações forem bem-sucedidas
   };
 
   return (
@@ -38,7 +38,7 @@ const Login = () => {
             type="text"
             placeholder="Digite seu CPF"
             value={cpf}
-            onChange={e => setCpf(e.target.value.replace(/[^0-9]/g, ""))}
+            onChange={(e) => setCpf(e.target.value.replace(/[^0-9]/g, ""))}
           />
           <label className="divInput__label">Senha:</label>
           <input
@@ -46,9 +46,9 @@ const Login = () => {
             type="password"
             placeholder="***************"
             value={password}
-            onChange={e => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
-          <p>{error}</p>
+          <p>{error}</p> {/* Exibe a mensagem de erro, se houver */}
           <button type="submit" className="divInput__button">
             Entrar
           </button>

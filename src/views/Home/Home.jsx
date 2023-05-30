@@ -8,7 +8,7 @@ const Home = ({ data }) => {
   return (
     <div className="body">
       <div>
-        <Header />
+        <Header /> {/* Componente do cabeçalho */}
         <img
           className="imgHome"
           src="./src/assets/imageHome.svg"
@@ -16,11 +16,11 @@ const Home = ({ data }) => {
         />
         <section className="home">
           {data.map((product) => (
-            <Products key={product.id} data={product} />
+            <Products key={product.id} data={product} /> /* Componente de produtos */
           ))}
         </section>
       </div>
-      <Footer />
+      <Footer /> {/* Componente do rodapé */}
     </div>
   );
 };
