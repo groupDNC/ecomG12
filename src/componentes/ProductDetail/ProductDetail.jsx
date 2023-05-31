@@ -92,7 +92,13 @@ const ProductDetail = ({ data }) => {
               <h1>Finalizar compra:</h1>
               <form>
                 <label htmlFor="text">Digite seu nome:</label>
-                <input type="text" />
+                <input type="text" placeholder="Nome Completo" />
+                <label htmlFor="text">Digite seu CPF:</label>
+                <input type="number" placeholder="Digite o CPF" />
+                <label htmlFor="text">Endereço:</label>
+                <input type="text" placeholder="Endereço" />
+                <label htmlFor="text">Forma de Pagamento:</label>
+                <input type="text" placeholder="Cartão ou boleto" />
               </form>
             </section>
           )}
