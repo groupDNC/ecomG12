@@ -6,7 +6,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: "/produtos/xboxSeriesX.svg",
     description: "Xbox Series X | Preto",
     paragraph: "Lorem ipsum dolor sit amet consectur",
-    price: "R$ 2.000",
+    price: "R$ 2.000,00",
     colors: ["black"],
   },
   {
@@ -15,7 +15,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: "/produtos/xboxSeriesS.svg",
     description: "Xbox Series S | Branco",
     paragraph: "Lorem ipsum dolor sit amet consectur",
-    price: "R$ 2.500",
+    price: "R$ 2.500,00",
     colors: ["white"],
   },
   {
@@ -24,7 +24,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: "/produtos/nintendoSwitch.svg",
     description: "Nintendo Switch com jogo",
     paragraph: "Lorem ipsum dolor sit amet consectur",
-    price: "R$ 1.800",
+    price: "R$ 1.800,00",
     colors: ["black"],
   },
   {
@@ -33,7 +33,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: "/produtos/gameGodOfWar.svg",
     description: "Jogo God Of War Playstation",
     paragraph: "Lorem ipsum dolor sit amet consectur",
-    price: "R$ 250",
+    price: "R$ 250,00",
   },
   {
     id: 5,
@@ -41,7 +41,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: "/produtos/gameUncharted.svg",
     description: "Jogo Uncharted Collection",
     paragraph: "Lorem ipsum dolor sit amet consectur",
-    price: "R$ 250",
+    price: "R$ 250,00",
   },
   {
     id: 6,
@@ -49,7 +49,7 @@ export const PRODUCTS_MOCK = [
     imgPathDetail: "/produtos/gameGranTurismo.svg",
     description: "Jogo Gran Turismo Playstation",
     paragraph: "Lorem ipsum dolor sit amet consectur",
-    price: "R$ 250",
+    price: "R$ 250,00",
   },
     
 
