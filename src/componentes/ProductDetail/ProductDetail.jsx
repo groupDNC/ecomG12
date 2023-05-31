@@ -88,9 +88,9 @@ const ProductDetail = ({ data }) => {
               </div>
             </div>
           ) : (
-            <section>
-              <h1>Finalizar compra:</h1>
-              <form>
+            <section className="modalPay">
+              <h1 className="modalPay__title">Finalizar compra:</h1>
+              <form className="modalPay__form">
                 <label htmlFor="text">Digite seu nome:</label>
                 <input type="text" placeholder="Nome Completo" />
                 <label htmlFor="text">Digite seu CPF:</label>
@@ -100,6 +100,9 @@ const ProductDetail = ({ data }) => {
                 <label htmlFor="text">Forma de Pagamento:</label>
                 <input type="text" placeholder="Cartão ou boleto" />
               </form>
+              <button className="btn-blue">
+                <Link to={"/Home"}>Finalizar compra</Link>
+              </button>
             </section>
           )}
         </ModalProduct>
