@@ -5,7 +5,9 @@
   width: 100%;
   background-color: $blue;
   padding: 1rem;
-  display: block;
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
 
   &__text {
     color: $white;
