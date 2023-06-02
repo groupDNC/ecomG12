@@ -95,16 +95,32 @@ const ProductDetail = ({ data }) => {
               <h1 className="modalPay__title">Finalizar compra:</h1>
               <form className="modalPay__form">
                 <label htmlFor="text">Digite seu nome:</label>
-                <input type="text" placeholder="Nome Completo" />
+                <input
+                  className="modalPay__form-input"
+                  type="text"
+                  placeholder="Nome Completo"
+                />
                 <label htmlFor="text">Digite seu CPF:</label>
-                <input type="number" placeholder="Digite o CPF" />
+                <input
+                  className="modalPay__form-input"
+                  type="text"
+                  placeholder="Digite o CPF"
+                />
                 <label htmlFor="text">Endereço:</label>
-                <input type="text" placeholder="Endereço" />
+                <input
+                  className="modalPay__form-input"
+                  type="text"
+                  placeholder="Endereço"
+                />
                 <label htmlFor="text">Forma de Pagamento:</label>
-                <input type="text" placeholder="Cartão ou boleto" />
+                <input
+                  className="modalPay__form-input"
+                  type="text"
+                  placeholder="Cartão ou boleto"
+                />
               </form>
-              <button className="btn-blue">
-                <Link to={"/Home"}>Finalizar compra</Link>
+              <button className="btn-form">
+                <Link to={"/Home"}>Confirmar pedido</Link>
               </button>
             </section>
           )}
