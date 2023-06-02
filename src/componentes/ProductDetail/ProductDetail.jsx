@@ -9,7 +9,10 @@ const ProductDetail = ({ data }) => {
   console.log(modalOpen);
   return (
     <>
-      <div style={{ background: modalOpen && "#2D2D2D" }}>
+      <div
+        style={{ background: modalOpen && "#2D2D2D" }}
+        className="containerFix"
+      >
         <div
           className="productDetail"
           style={{
