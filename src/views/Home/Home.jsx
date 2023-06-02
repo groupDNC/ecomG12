@@ -9,14 +9,13 @@ const Home = ({ data }) => {
     <div className="body">
       <div>
         <Header /> {/* Componente do cabeçalho */}
-        <img
-          className="imgHome"
-          src="./src/assets/imageHome.svg"
-          alt="Imagem Home"
-        />
+        <img className="imgHome" src="/imageHome.svg" alt="Imagem Home" />
         <section className="home">
           {data.map((product) => (
-            <Products key={product.id} data={product} /> /* Componente de produtos */
+            <Products
+              key={product.id}
+              data={product}
+            /> /* Componente de produtos */
           ))}
         </section>
       </div>
